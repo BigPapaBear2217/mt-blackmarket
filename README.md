@@ -11,6 +11,11 @@ Add to qb-core/server/player.lua
     PlayerData.metadata['blackmarketlevel'] = PlayerData.metadata['blackmarketlevel'] or 0
 ```
 
+Add to qb-smallresource/server/logs.lua
+```
+    ['blackmarket'] = '',
+ ```
+
 # Dependicies:
 - qb-core - https://github.com/qbcore-framework/qb-core
 - qb-target - https://github.com/qbcore-framework/qb-target
