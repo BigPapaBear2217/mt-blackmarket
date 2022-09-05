@@ -12,7 +12,7 @@ RegisterNetEvent('mt-blackmarket:server:ComprarItems', function(item, pontos, di
         else
             TriggerClientEvent('QBCore:Notify', source, Lang.noBlackMoney, 'error', '5000')
         end
-    else
+    elseif Player.Functions.GetMoney('cash') then
         Player.Functions.RemoveMoney('cash', dinheiro)
 
         Player.Functions.AddItem(item, 1)
