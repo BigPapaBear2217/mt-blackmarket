@@ -4,7 +4,7 @@ RegisterNetEvent('mt-blackmarket:server:ComprarItems', function(item, pontos, di
     local Player = QBCore.Functions.GetPlayer(source)
     
     if Config.BlackMoney['UseBlackMoney'] == true then
-        if Player.Functions.GetItemByName(Config.BlackMoney['BlackMoneyItemName']) and Player.Functions.GetItemByName(Config.BlackMoney['BlackMoneyItemName']).amount >= dinheiro then
+        if Player.Functions.GetItemByName(Config.BlackMoney['BlackMoneyItemName']) >= dinheiro then
             Player.Functions.RemoveItem(Config.BlackMoney['BlackMoneyItemName'], dinheiro)
 
             Player.Functions.AddItem(item, 1)
