@@ -34,7 +34,6 @@ RegisterNetEvent('mt-blackmarket:client:ComprarItems', function(args)
     if QBCore.Functions.GetPlayerData().metadata["blackmarketlevel"] >= Config.Items[current].requeriedPoints then
         TriggerServerEvent('qb-log:server:CreateLog', 'blackmarket', 'Item buyed', 'green', string.format(playername .. ' id ' .. playerid .. ' was buyed 1 ' .. Config.Items[current].menuLabel .. ' and earn '.. pontos .. ' points', true))
         TriggerServerEvent('mt-blackmarket:server:ComprarItems', item, pontos, dinheiro)
-        QBCore.Functions.Notify(Lang.buySuccess .. Config.Items[current].menuLabel .. Lang.buySuccessPrice .. Config.Items[current].itemPrice .. '$', 'success')
     else
         QBCore.Functions.Notify(Lang.errorPoints, 'error', 7500)
     end

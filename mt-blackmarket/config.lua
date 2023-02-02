@@ -1,8 +1,4 @@
 Config = {
-    ['BlackMoney'] = {
-        ['UseBlackMoney'] = false, -- if true you will use black money to buy items if false you will use normal cash
-        ['BlackMoneyItemName'] = 'markedbills', -- Name to black money item
-    },
     ['Items'] = {
         ['lockpick'] = { -- Item name
             menuLabel = 'Lockpick', -- Item name (Label)
@@ -34,13 +30,11 @@ Config = {
 
 Lang = {
     ['Price'] = 'Price: ',
-    ['buySuccess'] = 'You buy a ',
-    ['buySuccessPrice'] = ' for ',
-    ['errorPoints'] = 'You do not have the right points to buy that item...',
+    ['buySuccess'] = 'You bought something',
+    ['errorPoints'] = 'You do not have enough points to buy that item...',
     ['menuHeader'] = 'Black Market Menu',
     ['pointsCommand1'] = 'You have ',
     ['pointsCommand2'] = ' points!',
     ['RequiredLabel'] = 'Required points: ',
-    ['errorNoMoney'] = 'You do not have enought money to buy this...',
-    ['noBlackMoney'] = 'You do not have enouught black money to buy this...',
+    ['errorNoMoney'] = 'You dont have enough cash to buy that...',
 }
